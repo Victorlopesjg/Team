@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvChamadaAtiva"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desativada" 
+        android:textSize="20dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="send"
+        android:text="Send" 
+        android:visibility="gone">
+    </Button>
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SCAN" />
+
+    <ListView
+        android:id="@+id/list"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
